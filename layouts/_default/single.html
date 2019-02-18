@@ -25,7 +25,8 @@
 	<article class="article">
 		<div class="wrapper">
 			<h1>{{ .Title }} {{ if .IsDraft }} (Draft){{ end }}</h1>
-
+			<div>Last updated: {{ .Date.Format "January 2, 2006" }} </div>
+			<div>Reading time: {{ .ReadingTime }} minutes </div>
 			{{ .Content }}
 
 			<aside class="copyright" role="note">
